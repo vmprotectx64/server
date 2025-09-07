@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Logs</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-title">Admin Panel</div>
+        <a href="/keys" class="sidebar-link"><span class="icon">🔑</span><span class="label">Keys</span></a>
+        <a href="/bans" class="sidebar-link"><span class="icon">🚫</span><span class="label">Bans</span></a>
+        <a href="/logs" class="sidebar-link active"><span class="icon">📜</span><span class="label">Logs</span></a>
+        <div class="logout-btn">
+            <a href="/logout" class="btn btn-secondary btn-sm">Logout</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>Logs</h1>
+
+            <div class="table-wrap">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Timestamp</th>
+                            <th>Key</th>
+                            <th>HWID</th>
+                            <th>Message</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{range .Logs}}
+                        <tr>
+                            <td>{{.Timestamp.Format "2006-01-02 15:04:05"}}</td>
+                            <td>{{.Key}}</td>
+                            <td>{{.HWID}}</td>
+                            <td>{{.Message}}</td>
+                            <td>
+                                <form action="/logs/ban" method="post" class="ban-form">
+                                    <input type="hidden" name="key" value="{{.Key}}">
+                                    <input type="hidden" name="hwid" value="{{.HWID}}">
+                                    <input type="text" name="reason" placeholder="Ban reason" class="input-sm">
+                                    <button type="submit" class="btn btn-danger btn-sm" name="action" value="ban">Ban Key</button>
+                                </form>
+                            </td>
+                        </tr>
+                        {{end}}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row buttons-row">
+                <a href="/keys" class="btn btn-secondary">Keys</a>
+                <a href="/bans" class="btn btn-secondary">Bans</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

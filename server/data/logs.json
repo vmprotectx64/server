@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "key": "hE9ue3j5G8fBtK4G",
+    "hwid": "0c665ee55813cb47f0a0c584c071a0cf",
+    "message": "User authenticated",
+    "timestamp": "2025-08-12T14:48:31.3233429+03:00"
+  },
+  {
+    "id": 2,
+    "key": "euY7L2RAU4c3jpql",
+    "hwid": "0c665ee55813cb47f0a0c584c071a0cf",
+    "message": "User authenticated",
+    "timestamp": "2025-08-12T14:49:13.3927564+03:00"
+  },
+  {
+    "id": 3,
+    "key": "CKsbTpR5xQL90Jc4",
+    "hwid": "0c665ee55813cb47f0a0c584c071a0cf",
+    "message": "User authenticated",
+    "timestamp": "2025-08-12T14:49:31.0171057+03:00"
+  },
+  {
+    "id": 4,
+    "key": "Q3pk4NeXuFlF1ejr",
+    "hwid": "0c665ee55813cb47f0a0c584c071a0cf",
+    "message": "User authenticated",
+    "timestamp": "2025-08-12T21:31:58.9915049+03:00"
+  },
+  {
+    "id": 5,
+    "key": "Lb48IFrFWK1dfmen",
+    "hwid": "0c665ee55813cb47f0a0c584c071a0cf",
+    "message": "User authenticated",
+    "timestamp": "2025-08-12T21:41:18.0555043+03:00"
+  },
+  {
+    "id": 6,
+    "key": "Lb48IFrFWK1dfmen",
+    "hwid": "0c665ee55813cb47f0a0c584c071a0cf",
+    "message": "User authenticated",
+    "timestamp": "2025-08-12T21:41:57.0006763+03:00"
+  },
+  {
+    "id": 7,
+    "key": "",
+    "hwid": "0c665ee55813cb47f0a0c584c071a0cf",
+    "message": "Error: Authentication failed: HWID mismatch",
+    "timestamp": "2025-08-12T21:42:18.7874081+03:00"
+  },
+  {
+    "id": 8,
+    "key": "Lb48IFrFWK1dfmen",
+    "hwid": "0c665ee55813cb47f0a0c584c071a0cf",
+    "message": "User authenticated",
+    "timestamp": "2025-08-12T21:59:41.5932116+03:00"
+  }
+]

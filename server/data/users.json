@@ -1,0 +1,12 @@
+[
+  {
+    "login": "sh1r0",
+    "password": "$2a$15$qeWZD2ACA.farjea7E4JkeQCXJ2FcT987sLUdqZNJR/bMqTinmPHi",
+    "ips": ["104.28.254.34", "192.168.3.10", "127.0.0.1"]
+  },
+  {
+    "login": "sigma",
+    "password": "$2a$15$N42cc8JbpxCIkrJNFaF6uOh9eswlhTtXKrQxKyuagiEWsVzn8rQ9K",
+    "ips": ["104.28.254.34", "192.168.3.10"]
+  }
+]
